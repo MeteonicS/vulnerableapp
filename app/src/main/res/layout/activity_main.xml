@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Buttons for each API call -->
+        <Button
+            android:id="@+id/buttonBufferOverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buffer Overflow API" />
+
+        <Button
+            android:id="@+id/buttonCommandInjection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonBufferOverflow"
+            android:layout_marginTop="8dp"
+            android:text="Command Injection API" />
+
+        <Button
+            android:id="@+id/buttonXSS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCommandInjection"
+            android:layout_marginTop="8dp"
+            android:text="XSS API" />
+
+        <Button
+            android:id="@+id/buttonIntegerOverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonXSS"
+            android:layout_marginTop="8dp"
+            android:text="Integer Overflow API" />
+
+        <Button
+            android:id="@+id/buttonJsonDepthOverflow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonIntegerOverflow"
+            android:layout_marginTop="8dp"
+            android:text="JSON Depth Overflow API" />
+
+        <Button
+            android:id="@+id/buttonLdapInjection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonJsonDepthOverflow"
+            android:layout_marginTop="8dp"
+            android:text="LDAP Injection API" />
+
+        <Button
+            android:id="@+id/buttonRegexDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLdapInjection"
+            android:layout_marginTop="8dp"
+            android:text="Regex DoS API" />
+
+        <Button
+            android:id="@+id/buttonSqlInjection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonRegexDos"
+            android:layout_marginTop="8dp"
+            android:text="SQL Injection API" />
+
+        <Button
+            android:id="@+id/buttonStringValidation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSqlInjection"
+            android:layout_marginTop="8dp"
+            android:text="String Validation API" />
+
+        <Button
+            android:id="@+id/buttonXmlExternalEntity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonStringValidation"
+            android:layout_marginTop="8dp"
+            android:text="XML External Entity API" />
+
+        <Button
+            android:id="@+id/buttonCrossSiteTracing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonXmlExternalEntity"
+            android:layout_marginTop="8dp"
+            android:text="Cross Site Tracing API" />
+
+        <Button
+            android:id="@+id/buttonNonHttpsLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonCrossSiteTracing"
+            android:layout_marginTop="8dp"
+            android:text="Non-HTTPS Links API" />
+
+        <Button
+            android:id="@+id/buttonHostHeaderInjection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonNonHttpsLinks"
+            android:layout_marginTop="8dp"
+            android:text="Host Header Injection API" />
+
+        <Button
+            android:id="@+id/buttonOpensslCcs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonHostHeaderInjection"
+            android:layout_marginTop="8dp"
+            android:text="OpenSSL CCS Injection API" />
+
+        <Button
+            android:id="@+id/buttonTlsRenegotiation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonOpensslCcs"
+            android:layout_marginTop="8dp"
+            android:text="TLS Renegotiation API" />
+
+        <Button
+            android:id="@+id/buttonTlsDowngrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonTlsRenegotiation"
+            android:layout_marginTop="8dp"
+            android:text="TLS Downgrade API" />
+
+        <Button
+            android:id="@+id/buttonTlsRobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonTlsDowngrade"
+            android:layout_marginTop="8dp"
+            android:text="TLS ROBOT API" />
+
+        <Button
+            android:id="@+id/buttonTlsCrime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonTlsRobot"
+            android:layout_marginTop="8dp"
+            android:text="TLS/SSL CRIME API" />
+
+        <Button
+            android:id="@+id/buttonHeartbleed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonTlsCrime"
+            android:layout_marginTop="8dp"
+            android:text="Heartbleed API" />
+
+        <Button
+            android:id="@+id/buttonGeneralServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonHeartbleed"
+            android:layout_marginTop="8dp"
+            android:text="General Server Vulnerabilities API" />
+
+        <!-- TextView to display the API response -->
+        <TextView
+            android:id="@+id/textViewResponse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonGeneralServer"
+            android:layout_marginTop="16dp"
+            android:text="API Response will appear here"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+    </RelativeLayout>
+</ScrollView>

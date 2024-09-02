@@ -1,0 +1,4 @@
+<!DOCTYPE foo [
+  <!ENTITY xxe SYSTEM "file:///C:/Users/ravi/Desktop/API/sample.txt">
+]>
+<foo>&xxe;</foo>
